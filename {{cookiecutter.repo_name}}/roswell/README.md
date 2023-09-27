@@ -25,7 +25,6 @@ Run it:
 
     ~/.roswell/bin/{{ cookiecutter.project_name}} [name]~&
 
-Your users can install the script with ros install {{ cookiecutter.username }}/{{ cookiecutter.project_name }}
 
 Use `+Q` if you don't have Quicklisp dependencies to save startup time.
 Use `ros build --disable-compression` to save on startup time and loose on application size.

@@ -37,3 +37,6 @@ tramp
 
 # cask packages
 .cask/
+
+# binary
+/{{ cookiecutter.project_name}}

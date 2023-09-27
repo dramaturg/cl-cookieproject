@@ -10,7 +10,7 @@
   :source-control (:git "")
 
   ;; Dependencies.
-  :depends-on ()
+  :depends-on (:swank :bordeaux-threads :cl-ppcre)
 
   ;; Project stucture.
   :serial t

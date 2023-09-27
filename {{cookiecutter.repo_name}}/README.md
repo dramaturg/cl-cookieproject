@@ -21,16 +21,9 @@ $ ./{{ cookiecutter.project_name }} [name]
 Hello [name] from {{ cookiecutter.project_name }}
 ```
 
-## Roswell integration
-
-Roswell is an implementation manager and [script launcher](https://github.com/roswell/roswell/wiki/Roswell-as-a-Scripting-Environment).
-
-A POC script is in the roswell/ directory.
-
-Your users can install the script with `{{ cookiecutter.username }}/{{ cookiecutter.project_name }}`.
-
 # Dev
 
+{%- if cookiecutter.testing_framework == 'fiveam' %}
 Tests are defined with [Fiveam](https://common-lisp.net/project/fiveam/docs/).
 
 Run them from the terminal with `make test`. You should see a failing test.
@@ -71,5 +64,6 @@ $ echo $?
 On Slime, load the test package and run `run!`.
 
 ---
+{%- endif %}
 
-Licence: BSD
+Licence: {{ cookiecutter.licence }}

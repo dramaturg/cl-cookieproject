@@ -6,6 +6,15 @@
     "year": 1984,
     "author": "CL User",
     "email": "{{ cookiecutter.author.split()|join('.')|lower }}@mail.com",
-    "username": "{{ cookiecutter.author|first|lower }}{{ cookiecutter.author.split()|last|lower }}",
-    "licence": "MIT"
+    "licence": "MIT",
+    "testing_framework": ["none", "fiveam"],
+    "lisp": "sbcl",
+    "git_forge_prefix": "",
+    "__prompts__": {
+        "testing_framework": {
+            "__prompt__": "Which [bold yellow]testing framework[/] should we use?",
+            "fiveam": "FiveAM",
+            "none": "None"
+        }
+    }
 }
