@@ -9,6 +9,8 @@
     "licence": "MIT",
     "testing_framework": ["none", "fiveam"],
     "lisp": "sbcl",
+    "lisp_libraries": "swank bordeaux-threads cl-ppcre",
+    "__lisp_libraries_asd": "{{ cookiecutter.lisp_libraries | replace('', ':', 1) | replace(' ', ' :') }}",
     "git_forge_prefix": "",
     "__prompts__": {
         "testing_framework": {

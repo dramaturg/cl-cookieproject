@@ -10,7 +10,7 @@
   :source-control (:git "")
 
   ;; Dependencies.
-  :depends-on (:swank :bordeaux-threads :cl-ppcre)
+  :depends-on ({{ cookiecutter.__lisp_libraries_asd }})
 
   ;; Project stucture.
   :serial t

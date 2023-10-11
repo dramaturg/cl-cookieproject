@@ -1,6 +1,8 @@
 LISP ?= {{ cookiecutter.lisp }}
 
+{%- if cookiecutter.testing_framework != 'none' %}
 all: test
+{%- endif %}
 
 run:
 	rlwrap $(LISP) --load run.lisp \
